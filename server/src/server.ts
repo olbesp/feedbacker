@@ -1,6 +1,16 @@
 import express from 'express';
-const app = express();
 
-app.get('/', (req, res) => res.send('Hello World!'));
+const app: express.Application = express();
 
-app.listen(3000, () => console.log('Listening on port 3000!'));
+app.get(
+  '/',
+  (req, res): void => {
+    res.send('Hello World!');
+  }
+);
+
+const PORT: number | string = process.env.PORT || 3090;
+
+app.listen(PORT, () => {
+  // console.log('Listening on port 3090!');
+});
