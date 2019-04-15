@@ -5,7 +5,7 @@ const app: express.Application = express();
 app.get(
   '/',
   (req, res): void => {
-    res.send('Hello World!');
+    res.send({ welcome: true });
   }
 );
 
