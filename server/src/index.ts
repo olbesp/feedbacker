@@ -11,6 +11,4 @@ app.get(
 
 const PORT: number | string = process.env.PORT || 3090;
 
-app.listen(PORT, () => {
-  // console.log('Listening on port 3090!');
-});
+app.listen(PORT);

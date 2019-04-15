@@ -1,3 +1,5 @@
+/// <reference types="node" />
+
 const { sum } = require('../src/demo');
 
 it('works', () => {
