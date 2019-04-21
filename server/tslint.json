@@ -7,7 +7,15 @@
   ],
   "jsRules": {},
   "rules": {
-    "ter-arrow-parens": [true, "always"]
+    "ter-arrow-parens": [true, "always"],
+    "ordered-imports": false,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ]
   },
   "rulesDirectory": []
 }
